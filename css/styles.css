@@ -805,45 +805,45 @@ img {
   border-radius: 4px;
   padding-left: 16px;
   outline: none;
+  transition: boder-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscribe-form_input:focus {
   outline: none;
 }
-.subscribe-form_input:required:focus:valid:not(:placeholder-show) {
+.subscribe-form_input:required:focus:valid:not(:placeholder-shown) {
   border: 1px solid green;
 }
-.subscribe-form_input:required:focus:invalid:not(:placeholder-show) {
+.subscribe-form_input:required:focus:invalid:not(:placeholder-shown) {
   border: 1px solid red;
 }
-.subscribe-form:hover,
-.subscribe-form:focus {
-  color: var(--accent-color);
+.subscribe-form_input:hover,
+.subscribe-form_input:focus {
+  border-color: var(--accent-color);
   box-shadow: var(--border-box-shadow);
+  cursor: pointer;
 }
 .subscribe-button_submit {
-  display: inline-block;
+  display: flex;
 }
 .subscribe-button {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: 12px;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   background-color: var(--accent-color);
   border-radius: 4px;
-}
-.send-icon {
-  display: flex;
-  justify-content: center;
-  fill: var(--white-color);
-}
-.subscribe-title_input {
-  display: flex;
-  justify-content: center;
+
   font-weight: 700px;
   font-size: 16px;
-  padding-left: 23px;
-  padding-right: 10px;
-
   color: var(--white-color);
+  cursor: pointer;
 }
+.send-icon {
+  margin-left: 10px;
+  fill: var(--white-color);
+}
+
 /* ======= END SUBSCRIBE ======== */
