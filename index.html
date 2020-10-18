@@ -71,6 +71,39 @@
            </use>
          </svg>
          </button>
+         <form action="#" class="modal-form"><h2>Оставьте свои данные, мы вам перезвоним</h2>
+          <label class="modal-form_field">
+            <span class="modal-title">Имя</span>
+            <span class="modal-form_wrapper">
+            <input type="text" name="user-name" class="modal-form_input" required>
+            <svg width="12" height="12" class="modal-name-icon">
+              <use href="./images/sprite/sprite.svg#icon-name"></use>
+            </svg>
+            </span>
+          </label>
+           <label class="modal-form_field">
+            <span class="modal-title">Телефон</span>
+             <span class="modal-form_wrapper">
+            <input type="tel" name="user-tel" class="modal-form_input" required>
+             <svg width="12" height="12" class="modal-name-icon">
+              <use href="./images/sprite/sprite.svg#icon-tel"></use>
+            </svg>
+            </span>
+           </label>
+           <label class="modal-form_field">
+            <span class="modal-title">Почта</span>
+            <span class="modal-form_wrapper">
+            <input type="email" name="user-email" class="modal-form_input" required>
+             <svg width="12" height="12" class="modal-name-icon">
+              <use href="./images/sprite/sprite.svg#icon-email"></use>
+            </svg>
+            </span>
+           </label>
+          <textarea name="" id="" cols="30" rows="10" name="user-message" class="modal-form_message"></textarea>
+        <input type="checkbox" name="user-policy" value="accept-policy" id="check-policy" class="modal-form_policy visually-hidden">
+        <label for="check-policy" class="modal-policy_checkbox">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
+        <button type="submit" class="modal-form_button">Отправить</button>
+      </form>
         </div>
       </div>
       <script src="./js/modal.js">
@@ -81,7 +114,7 @@
       <!--OUR ADVANTAGES-->
       <section class="advantages-section section">
         <div class="container">
-        <h2 hidden>Наши преимущества</h2>
+        <h2 class="visually-hidden">Наши преимущества</h2>
         <ul class="advantages-list list"> 
           <li class="advantages antenna">
             <h3 class="advantages-title">Внимание к деталям</h3>
