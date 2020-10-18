@@ -75,7 +75,7 @@
           <label class="modal-form_field">
             <span class="modal-title">Имя</span>
             <span class="modal-form_wrapper">
-            <input type="text" name="user-name" class="modal-form_input" required>
+            <input type="text" name="user-name" class="modal-form_input" placeholder="" required>
             <svg width="12" height="12" class="modal-name-icon">
               <use href="./images/sprite/sprite.svg#icon-name"></use>
             </svg>
@@ -84,7 +84,7 @@
            <label class="modal-form_field">
             <span class="modal-title">Телефон</span>
              <span class="modal-form_wrapper">
-            <input type="tel" name="user-tel" class="modal-form_input" required>
+            <input type="tel" name="user-tel" class="modal-form_input" placeholder="" required pattern="[0-9]{10}">
              <svg width="12" height="12" class="modal-name-icon">
               <use href="./images/sprite/sprite.svg#icon-tel"></use>
             </svg>
@@ -93,21 +93,21 @@
            <label class="modal-form_field">
             <span class="modal-title">Почта</span>
             <span class="modal-form_wrapper">
-            <input type="email" name="user-email" class="modal-form_input" required>
+            <input type="email" name="user-email" class="modal-form_input" placeholder="" required>
              <svg width="12" height="12" class="modal-name-icon">
               <use href="./images/sprite/sprite.svg#icon-email"></use>
             </svg>
             </span>
            </label>
-          <textarea name="" id="" cols="30" rows="10" name="user-message" class="modal-form_message"></textarea>
+           <span class="modal-title">Комментарий</span>
+          <textarea name="user-message" class="modal-form_message" maxlength="300" placeholder="Введите текст"></textarea>
         <input type="checkbox" name="user-policy" value="accept-policy" id="check-policy" class="modal-form_policy visually-hidden">
-        <label for="check-policy" class="modal-policy_checkbox">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
+        <label for="check-policy" class="modal-policy_checkbox"><span class="policy-text">Соглашаюсь с рассылкой и принимаю</span> <a href="#">Условия договора</a></label>
         <button type="submit" class="modal-form_button">Отправить</button>
       </form>
         </div>
       </div>
       <script src="./js/modal.js">
-
       </script>
       </div>
       </section>
