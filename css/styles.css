@@ -362,10 +362,10 @@ img {
 .modal-form_input:focus + .modal-name-icon {
   fill: var(--accent-color);
 }
-.modal-form_input:required:focus:valid {
+.modal-form_input:required:focus:valid:not(:placeholder-shown) {
   border: 1px solid var(--green-color);
 }
-.modal-form_input:required:focus:invalid {
+.modal-form_input:required:focus:invalid:not(:placeholder-shown) {
   border: 1px solid var(--red-color);
 }
 .modal-form_message:placeholder-shown {
