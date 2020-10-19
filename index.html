@@ -75,7 +75,7 @@
           <label class="modal-form_field">
             <span class="modal-title">Имя</span>
             <span class="modal-form_wrapper">
-            <input type="text" name="user-name" class="modal-form_input" placeholder="" required>
+            <input type="text" name="user-name" class="modal-form_input" placeholder=" " required minlength="2">
             <svg width="12" height="12" class="modal-name-icon">
               <use href="./images/sprite/sprite.svg#icon-name"></use>
             </svg>
@@ -84,7 +84,7 @@
            <label class="modal-form_field">
             <span class="modal-title">Телефон</span>
              <span class="modal-form_wrapper">
-            <input type="tel" name="user-tel" class="modal-form_input" placeholder="" required pattern="[0-9]{10}">
+            <input type="tel" name="user-tel" class="modal-form_input" placeholder=" " required pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{2}">
              <svg width="12" height="12" class="modal-name-icon">
               <use href="./images/sprite/sprite.svg#icon-tel"></use>
             </svg>
@@ -93,7 +93,7 @@
            <label class="modal-form_field">
             <span class="modal-title">Почта</span>
             <span class="modal-form_wrapper">
-            <input type="email" name="user-email" class="modal-form_input" placeholder="" required>
+            <input type="email" name="user-email" class="modal-form_input" placeholder=" " required>
              <svg width="12" height="12" class="modal-name-icon">
               <use href="./images/sprite/sprite.svg#icon-email"></use>
             </svg>
@@ -478,7 +478,6 @@
           <b class="subscribe-title">Подпишитесь на рассылку</b>
           <form action="#" class="subscribe-form">
           <input type="email" class="subscribe-form_input" name="user-email" placeholder="E-mail" required>
-          <div class="subscribe-button_submit">
           <button type="submit" class="subscribe-button"><span class="subscribe-title_input">Подписаться</span>
           <svg class="send-icon" width="24" height="24">
             <use href="./images/sprite/sprite.svg#icon-send"></use>
