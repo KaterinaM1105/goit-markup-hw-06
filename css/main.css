@@ -473,6 +473,36 @@ img {
   margin-left: auto;
 }
 
+.contacts-item {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-svg-icon {
+  display: flex;
+  align-self: center;
+  margin-right: 10px;
+}
+
+.contacts-item .contacts-svg-icon {
+  fill: var(--primary-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-item:hover .contacts-svg-icon,
+.contacts-item:focus .contacts-svg-icon {
+  fill: var(--accent-color);
+}
+
+.nav-list .link,
+.header-contacts .link {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .hero {
   margin: 0 auto;
   max-width: 1600px;
@@ -856,35 +886,5 @@ img {
   border-color: var(--subscribe-border-hover);
   box-shadow: var(--border-box-shadow);
   cursor: pointer;
-}
-
-.contacts-item {
-  color: var(--primary-text-color);
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts-svg-icon {
-  display: flex;
-  align-self: center;
-  margin-right: 10px;
-}
-
-.contacts-item .contacts-svg-icon {
-  fill: var(--primary-text-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts-item:hover .contacts-svg-icon,
-.contacts-item:focus .contacts-svg-icon {
-  fill: var(--accent-color);
-}
-
-.nav-list .link,
-.header-contacts .link {
-  display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 /*# sourceMappingURL=main.css.map */
