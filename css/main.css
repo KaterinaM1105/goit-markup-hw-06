@@ -406,7 +406,7 @@ img {
   align-items: baseline;
 }
 
-.header-bottom .container {
+.header-bottom {
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--border-bottom-color);
@@ -762,6 +762,7 @@ img {
   margin-right: 30px;
 }
 
+/* ====== CONTACTS ====== */
 .contacts .container {
   display: flex;
   align-items: baseline;
@@ -822,7 +823,6 @@ img {
   font-style: none;
 }
 
-/* ======= END JOIN US ========= */
 /* ==== FOOTER SOCIAL LISTS ==== */
 .footer-list-item {
   margin-left: 10px;
